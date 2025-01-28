@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/modern_card_background"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/image_placeholder_background2"
+        android:contentDescription="Imagen del producto" />
+
+    <!-- Información del producto -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#4B2E2E" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción del producto"
+            android:layout_marginTop="4dp"
+            android:textColor="#6C5E5E" />
+
+        <!-- Stock -->
+        <TextView
+            android:id="@+id/tvStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock: 20"
+            android:layout_marginTop="8dp"
+            android:textColor="#6C5E5E"
+            android:textStyle="bold" />
+
+        <!-- Precios -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Precio 25g -->
+            <TextView
+                android:id="@+id/tvPrecio25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio 25g: $50.00"
+                android:textColor="#8B5E3C"
+                android:textStyle="bold" />
+
+            <!-- Precio 50g -->
+            <TextView
+                android:id="@+id/tvPrecio50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio 50g: $90.00"
+                android:layout_marginTop="4dp"
+                android:textColor="#8B5E3C"
+                android:textStyle="bold" />
+
+            <!-- Precio 100g -->
+            <TextView
+                android:id="@+id/tvPrecio100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio 100g: $150.00"
+                android:layout_marginTop="4dp"
+                android:textColor="#8B5E3C"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón opciones -->
+    <ImageView
+        android:id="@+id/btnMenuOpciones"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp"
+        android:src="@drawable/ic_more_vert"
+        android:tint="#8B5E3C"
+        android:contentDescription="Opciones"
+        tools:ignore="UseAppTint" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF3E0"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Campo para DNI del cliente -->
+        <EditText
+            android:id="@+id/edtDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI del Cliente"
+            android:inputType="number"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#2C2C2C"
+            android:textColorHint="#8C7B75" />
+
+        <!-- Campo para el nombre del cliente -->
+        <EditText
+            android:id="@+id/edtCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Cliente"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#2C2C2C"
+            android:textColorHint="#8C7B75" />
+
+        <!-- Spinner para seleccionar el producto -->
+        <Spinner
+            android:id="@+id/spinnerProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+        <!-- Spinner para seleccionar el precio del producto -->
+        <Spinner
+            android:id="@+id/spinnerPrecios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+        <!-- Botón para agregar el producto a la lista -->
+        <Button
+            android:id="@+id/btnAgregarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Producto"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#5A4032"
+            android:textColor="#FFFFFF" />
+
+        <!-- Lista de productos seleccionados -->
+        <ListView
+            android:id="@+id/listViewProductos"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:divider="#D9C2B2"
+            android:dividerHeight="1dp" />
+
+        <!-- Muestra el total de la venta -->
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: S/ 0.00"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#5A4032" />
+
+        <!-- Spinner para método de pago -->
+        <Spinner
+            android:id="@+id/spinnerMetodoPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+        <!-- Botón para registrar la venta -->
+        <Button
+            android:id="@+id/btnRegistrarVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Venta"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#5A4032"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FFF8E1">
+
+    <!-- Título del Menú -->
+    <TextView
+        android:id="@+id/tvTituloMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú de Opciones"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#4E342E"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón Gestionar Inventario -->
+    <Button
+        android:id="@+id/btnGestionarInventario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestionar Inventario"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_brown"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón Gestionar Ventas -->
+    <Button
+        android:id="@+id/btnGestionarVentas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestionar Ventas"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_brown"
+        android:padding="12dp" />
+</LinearLayout>

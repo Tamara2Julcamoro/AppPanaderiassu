@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5E6E6"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Botón para registrar venta -->
+<Button
+android:id="@+id/btnRegistrarVenta"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/button_primary"
+android:text="Registrar Venta"
+android:textColor="#FFFFFF"
+android:textStyle="bold"
+android:textSize="16sp"
+android:layout_marginBottom="16dp" />
+
+    <!-- Botón para listar ventas -->
+<Button
+android:id="@+id/btnListarVentas"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/button_secondary"
+android:text="Listar Ventas"
+android:textColor="#FFFFFF"
+android:textStyle="bold"
+android:textSize="16sp" />
+    </LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sumaq Panaderia</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="gestionar_ventas">Gestionar Ventas</string>
+    <string name="gestionar_inventario">Gestionar Inventario</string>
+    <string name="gestionar_produccion">Gestionar Producción</string>
+    <string name="salir">Salir</string>
+    <string-array name="paquetes_array">
+        <item>Paquete de 25 unidades</item>
+        <item>Paquete de 50 unidades</item>
+        <item>Paquete de 100 unidades</item>
+    </string-array>
+    <string-array name="paquetes">
+        <item>25 unidades</item>
+        <item>50 unidades</item>
+        <item>100 unidades</item>
+    </string-array>
+    <string name="logo_description">Logotipo de la panadería Sumaq Cajamarca</string>
+    <string name="desc_registrar_venta">Icono de registrar venta</string>
+    <string name="desc_listar_ventas">Icono de listar ventas</string>
+</resources>
